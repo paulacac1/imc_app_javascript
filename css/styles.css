@@ -1,0 +1,49 @@
+body {
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.row {
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  padding-left: 105px;
+  padding-right: 150px;
+}
+
+.buttonClass {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+span {
+  background-color: lightblue;
+  color: white;
+  border-radius: 20%;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+tbody {
+  font-size: 11px;
+}
+
+.visibleFalse {
+  display: none;
+}
+
+.backgroundColorTable {
+  background-color: aliceblue;
+}

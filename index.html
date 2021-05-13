@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Compiled and minified CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <h3>Cálculo IMC</h3>
+    <div class="row">
+      <div class="input-field col s6">
+        <input
+          id="altura"
+          type="number"
+          class="validate"
+          placeholder="Metros"
+          step="0.01"
+        />
+        <label class="active" for="altura">Altura (ex: 1,60)</label>
+      </div>
+      <div class="input-field col s6">
+        <input
+          id="peso"
+          type="number"
+          class="validate"
+          placeholder="Quilos"
+          step="0.01"
+        />
+        <label class="active" for="peso">Peso (ex: 65,3)</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="buttonClass">
+        <a id="buttonCalcular" class="waves-effect waves-light btn">Calcular</a>
+      </div>
+      <div class="buttonClass">
+        <a id="buttonLimpar" class="waves-effect waves-light btn">Limpar</a>
+      </div>
+    </div>
+    <div class="result">
+      <div class="visibleFalse" id="label_result" style="font-weight: bold">
+        Seu IMC é:<span> </span>
+      </div>
+      <table>
+        <thead>
+          <th>IMC</th>
+          <th>Classificação</th>
+          <th>Obesidade (Grau)</th>
+        </thead>
+        <tbody>
+          <tr id="1">
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+          </tr>
+          <tr id="2">
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+          </tr>
+          <tr id="3">
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+          </tr>
+          <tr id="4">
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+          </tr>
+          <tr id="5">
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
